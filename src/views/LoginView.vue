@@ -42,6 +42,14 @@
           {{ isLoading ? 'Comprobando...' : 'Iniciar Sesión' }}
         </button>
       </form>
+      <div class="text-center mt-6">
+        <p class="text-sm text-gray-600">
+          ¿Eres nuevo en el claustro? 
+          <router-link :to="{ name: 'registro' }" class="text-blue-600 hover:underline font-medium">
+            Regístrate aquí
+          </router-link>
+        </p>
+      </div>
 
     </div>
   </div>
