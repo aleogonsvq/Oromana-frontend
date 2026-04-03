@@ -28,7 +28,7 @@
           <h2 class="text-lg font-bold text-center">{{ tramo.nombre }}</h2>
         </div>
 
-        <div class="p-4 flex-grow bg-gray-50">
+        <div class="p-4 grow bg-gray-50">
           <ul v-if="tramo.guardiasDisponibles.length > 0" class="space-y-3">
             <li 
               v-for="guardia in tramo.guardiasDisponibles" 

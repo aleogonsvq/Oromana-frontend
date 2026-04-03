@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         
-        <div class="flex-shrink-0 font-bold text-xl">
+        <div class="shrink-0 font-bold text-xl">
           Sustituciones CEIP
         </div>
 
