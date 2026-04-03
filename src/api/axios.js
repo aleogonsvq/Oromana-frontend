@@ -2,8 +2,11 @@ import axios from 'axios';
 
 // Creamos una instancia con la URL base de nuestro backend en Django
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/',
-    timeout: 5000,
+  // Si existe la variable de entorno la usa (producción), si no, usa localhost (desarrollo)
+  baseURL: import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api/',
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 // Interceptor: Antes de enviar cualquier petición, comprueba si hay un token
